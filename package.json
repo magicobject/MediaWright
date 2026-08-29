@@ -1,0 +1,27 @@
+{
+  "name": "mediawright",
+  "version": "1.0.0",
+  "description": "MediaWright — portfolio and services site. Static build for mediawright.uk.",
+  "private": true,
+  "scripts": {
+    "prepare": "git config core.hooksPath .githooks",
+    "build": "node scripts/build.mjs",
+    "test": "playwright test",
+    "test:ui": "playwright test --ui",
+    "test:headed": "playwright test --headed",
+    "serve": "tsx test/support/static-server.ts",
+    "typecheck": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/magicobject/MediaWright.git"
+  },
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@playwright/test": "^1.62.1",
+    "@types/node": "^26.3.0",
+    "tsx": "^4.23.12",
+    "typescript": "^7.0.2"
+  }
+}
