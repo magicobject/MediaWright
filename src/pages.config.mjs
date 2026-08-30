@@ -13,7 +13,7 @@ export const PAGES = [
   {
     slug: 'index',
     title: 'MediaWright | Websites for Businesses, Charities &amp; Books',
-    description: 'MediaWright builds websites for small businesses, charities, churches and community groups — plus the occasional book. Fast, honest, easy to maintain.',
+    description: 'MediaWright builds accessible, secure websites for small businesses, charities, churches and community groups — plus the occasional book. Fast, honest, easy to maintain.',
     active: 'index.html',
   },
   {
