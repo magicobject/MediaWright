@@ -37,3 +37,19 @@ export const PAGES: SitePage[] = [
     heading: /tell us about your project/i,
   },
 ];
+
+// Not in the primary nav — deliberately unlinked from anywhere on the site
+// (see CLAUDE.md's "Build numbers" section). Kept out of PAGES above so it
+// never gets pulled into the nav-behaviour specs, which assume every entry
+// there has a real nav link.
+export const UPDATES_PAGE: SitePage = {
+  path: '/updates.html',
+  navLabel: 'Updates',
+  titleContains: 'Site Updates',
+  heading: /site updates/i,
+};
+
+// Every generated page, including the ones without a primary nav link —
+// used by specs that should run against literally everything (footer,
+// accessibility, canonical URLs).
+export const ALL_PAGES: SitePage[] = [...PAGES, UPDATES_PAGE];

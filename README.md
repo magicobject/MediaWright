@@ -23,6 +23,12 @@ npm test          # run the Playwright suite
 
 `public/*.html` is a build artefact, regenerated automatically from `src/`/`templates/` on every commit by [.githooks/pre-commit](.githooks/pre-commit) (installed via `npm install`'s `prepare` script). A hand-edit made there gets silently overwritten — edit the source instead.
 
+## Build tags and the /updates changelog
+
+Every commit gets a matching git tag, `build-<date>.<NNN>` (e.g. `build-2026.08.31.001`) — the same value as the footer's "Build ..." text for that commit, so any deployed build is checkoutable by name (`git checkout build-2026.08.31.001`) without digging through `git log`.
+
+[src/pages/updates.html](src/pages/updates.html) (served at `/updates.html`) is a hand-maintained changelog, one entry per build number, newest first — the human-readable counterpart to the git tags. It's a real page, built by the normal pipeline like any other, but it's deliberately not linked from anywhere on the site (not in NAV, not the footer), and is `robots: noindex` in `src/pages.config.mjs` — a build log for whoever knows the URL, not user-facing content.
+
 ## Content notes
 
 - The three portfolio items on [work.html](src/pages/work.html) (Wright Maths Tuition, Kington Foodbank, Loving God) are real projects, all live and maintained.

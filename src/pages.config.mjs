@@ -35,6 +35,13 @@ export const PAGES = [
     active: 'contact.html',
   },
   {
+    slug: 'updates',
+    title: 'Site Updates | MediaWright',
+    description: 'Internal build changelog for mediawright.uk — not linked from anywhere on the site.',
+    active: null,
+    robots: 'noindex',
+  },
+  {
     slug: '404',
     title: 'Page Not Found | MediaWright',
     description: "This page couldn't be found. Find your way back to MediaWright's home, work or contact page.",
