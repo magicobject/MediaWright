@@ -13,7 +13,7 @@ export const PAGES = [
   {
     slug: 'index',
     title: 'MediaWright | Web Development Consultancy',
-    description: 'MediaWright is a web development consultancy building accessible, secure websites for small businesses, charities, churches and community groups — plus the occasional book. Fast, honest, easy to maintain.',
+    description: 'MediaWright is a web development consultancy building accessible, secure websites for businesses, charities, churches and community groups — plus the occasional book. Fast, honest, easy to maintain.',
     active: 'index.html',
   },
   {
@@ -25,7 +25,7 @@ export const PAGES = [
   {
     slug: 'services',
     title: 'Services | MediaWright',
-    description: 'What MediaWright can build for you: sites for small businesses and sole traders, charities and community groups, and writing/book projects.',
+    description: 'What MediaWright can build for you: sites for businesses and sole traders, charities and community groups, and writing/book projects.',
     active: 'services.html',
   },
   {
