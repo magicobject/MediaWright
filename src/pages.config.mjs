@@ -12,8 +12,8 @@ export const NAV = [
 export const PAGES = [
   {
     slug: 'index',
-    title: 'MediaWright | Websites for Businesses, Charities &amp; Books',
-    description: 'MediaWright builds accessible, secure websites for small businesses, charities, churches and community groups — plus the occasional book. Fast, honest, easy to maintain.',
+    title: 'MediaWright | Web Development Consultancy',
+    description: 'MediaWright is a web development consultancy building accessible, secure websites for small businesses, charities, churches and community groups — plus the occasional book. Fast, honest, easy to maintain.',
     active: 'index.html',
   },
   {

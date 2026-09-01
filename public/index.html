@@ -10,15 +10,15 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>MediaWright | Websites for Businesses, Charities &amp; Books</title>
-<meta name="description" content="MediaWright builds accessible, secure websites for small businesses, charities, churches and community groups — plus the occasional book. Fast, honest, easy to maintain.">
+<title>MediaWright | Web Development Consultancy</title>
+<meta name="description" content="MediaWright is a web development consultancy building accessible, secure websites for small businesses, charities, churches and community groups — plus the occasional book. Fast, honest, easy to maintain.">
 <link rel="canonical" href="https://mediawright.uk/index.html">
 <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
 <meta name="theme-color" content="#0f766e">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/style.css?v=2026.09.01.001">
+<link rel="stylesheet" href="css/style.css?v=2026.09.01.002">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -27,7 +27,7 @@
   "url": "https://mediawright.uk/",
   "email": "hello@mediawright.uk",
   "telephone": "+447449301083",
-  "description": "MediaWright builds websites for small businesses, charities, churches and community groups, and helps turn writing projects into proper websites.",
+  "description": "MediaWright is a web development consultancy building websites for small businesses, charities, churches and community groups, and helping turn writing projects into proper websites.",
   "areaServed": "GB",
   "sameAs": [
     "https://wrightmaths.uk/",
@@ -59,7 +59,7 @@
 <main>
 <section class="hero">
   <div class="wrap">
-    <span class="eyebrow">MediaWright</span>
+    <span class="eyebrow">Web Development Consultancy</span>
     <h1>We build things worth building.</h1>
     <p class="lead">We build accessible, secure websites for small businesses, charities, churches and community groups — plus the occasional book. Built to be fast, honest, and easy for you to keep updated yourself.</p>
     <div class="hero-actions">
@@ -97,6 +97,37 @@
 </section>
 
 <section class="section section-alt">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="kicker">How we build</span>
+      <h2>Secure by design. Accessible by design.</h2>
+      <p>Not a checklist we run through at the end — the two things every site starts from.</p>
+      <p>Built on today's platforms — Cloudflare's edge network, modern static-site tooling — using engineering discipline that's decades old: automated testing, version control, and code review before anything ships. The technology changes every few years; the practices that actually prevent bugs and security holes don't.</p>
+    </div>
+    <div class="grid grid-2">
+      <div class="card">
+        <span class="tag">Secure by design</span>
+        <h3>Nothing to leak, nothing to hack</h3>
+        <p>Your site can't leak what it was never built to hold. We don't bolt security on afterwards — for most sites, there's no plugin marketplace to patch, no admin login for someone to guess, no database of passwords to leak. For anything more sophisticated a project genuinely needs, that surface only exists where you've agreed it should — never by default.</p>
+        <ul class="tick">
+          <li>Every deploy passes an automated test suite first, not just a visual check</li>
+          <li>Real security headers (CSP, HSTS, clickjacking protection) — checkable in seconds at securityheaders.com</li>
+        </ul>
+      </div>
+      <div class="card">
+        <span class="tag">Accessible by design</span>
+        <h3>Nobody quietly locked out</h3>
+        <p>One in five visitors has a disability that affects how they browse — a screen reader, a keyboard instead of a mouse, low vision, colour blindness. We don't check for that at the end. Every page is tested against the same accessibility standard used by government websites, before it's ever allowed to go live.</p>
+        <ul class="tick">
+          <li>WCAG 2.1 AA from day one, not retrofitted after a complaint</li>
+          <li>Automated accessibility testing on every page, every commit — a real regression test, not a one-off audit</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
   <div class="wrap">
     <div class="section-head">
       <span class="kicker">Recent work</span>
@@ -160,9 +191,9 @@
   </div>
   <div class="legal wrap">
     <span>&copy; <span id="yr"></span> MediaWright.</span>
-    <span class="build-number">Build 2026.09.01.001</span>
+    <span class="build-number">Build 2026.09.01.002</span>
   </div>
-  <script>document.getElementById('yr').textContent = new Date().getFullYear();</script>
+  <script src="js/main.js?v=2026.09.01.002" defer></script>
 </footer>
 </body>
 </html>
