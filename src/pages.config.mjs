@@ -6,6 +6,7 @@ export const NAV = [
   { href: 'index.html', label: 'Home' },
   { href: 'work.html', label: 'Work' },
   { href: 'services.html', label: 'Services' },
+  { href: 'prices.html', label: 'Prices' },
   { href: 'contact.html', label: 'Contact' },
 ];
 
@@ -27,6 +28,12 @@ export const PAGES = [
     title: 'Services | MediaWright',
     description: 'What MediaWright can build for you: sites for businesses and sole traders, charities and community groups, and writing/book projects.',
     active: 'services.html',
+  },
+  {
+    slug: 'prices',
+    title: 'Prices | MediaWright',
+    description: 'Free web development for charities and community projects, with hosting and ongoing support from £10 a month. Businesses: get in touch for a quote.',
+    active: 'prices.html',
   },
   {
     slug: 'contact',

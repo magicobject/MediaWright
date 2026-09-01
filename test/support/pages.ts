@@ -31,6 +31,12 @@ export const PAGES: SitePage[] = [
     heading: /what we can build for you/i,
   },
   {
+    path: '/prices.html',
+    navLabel: 'Prices',
+    titleContains: 'Prices',
+    heading: /straightforward pricing/i,
+  },
+  {
     path: '/contact.html',
     navLabel: 'Contact',
     titleContains: 'Contact',

@@ -80,6 +80,12 @@ img{max-width:100%;display:block;}
 .card h3{font-size:1.15rem;margin-bottom:.4em;}
 .card .tag{display:inline-block;font-size:.75rem;font-weight:700;text-transform:uppercase;letter-spacing:.04em;color:var(--teal-dark);background:var(--teal-tint);padding:3px 9px;border-radius:6px;margin-bottom:12px;}
 
+/* Prices */
+.price-figure{font-family:var(--font-head);font-size:2.2rem;font-weight:700;color:var(--ink);margin:8px 0 6px;}
+.price-figure .unit{font-size:1rem;font-weight:600;color:var(--ink-soft);margin-left:4px;}
+.price-note{font-size:.92rem;color:var(--ink-soft);margin:0;}
+ul.price-included{margin-top:32px;max-width:60ch;}
+
 /* Work items */
 .work-item{display:grid;grid-template-columns:200px 1fr;gap:28px;padding:32px 0;border-top:1px solid var(--line);align-items:start;}
 .work-item:last-child{padding-bottom:0;}
