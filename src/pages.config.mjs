@@ -5,6 +5,7 @@
 export const NAV = [
   { href: 'index.html', label: 'Home' },
   { href: 'work.html', label: 'Work' },
+  { href: 'craft.html', label: 'Craft' },
   { href: 'services.html', label: 'Services' },
   { href: 'prices.html', label: 'Prices' },
   { href: 'contact.html', label: 'Contact' },
@@ -13,15 +14,21 @@ export const NAV = [
 export const PAGES = [
   {
     slug: 'index',
-    title: 'MediaWright | Web Development Consultancy',
-    description: 'MediaWright is a web development consultancy building accessible, secure websites for businesses, charities, churches and community groups — plus the occasional book. Fast, honest, easy to maintain.',
+    title: 'MediaWright | World-Class Web Craft, Without the Overhead',
+    description: 'MediaWright is a web development consultancy: legacy-consultancy calibre — accessible, secure, tested to 100% coverage — at a fraction of the cost, because AI does the typing and forty years of engineering discipline does the thinking.',
     active: 'index.html',
   },
   {
     slug: 'work',
     title: 'Our Work | MediaWright',
-    description: 'A look at what MediaWright has built: a maths tuition business, a local foodbank, and a book turned into a proper website.',
+    description: 'A look at what MediaWright has built: a maths tuition business, a local foodbank, a five-church benefice proof of concept, a book turned into a proper website, and the engineering rules behind all of it.',
     active: 'work.html',
+  },
+  {
+    slug: 'craft',
+    title: 'Our Craft | MediaWright',
+    description: "How MediaWright actually works: Mr Wright's Rules, forty years of software engineering principles, and exactly how each one applies when AI is doing most of the typing.",
+    active: 'craft.html',
   },
   {
     slug: 'services',

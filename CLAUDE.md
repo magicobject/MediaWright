@@ -28,3 +28,7 @@ The pre-commit hook bumps `build-number.json` on every commit (same date → cou
 2. **After committing**, tag it with that same build number and push the tag: `git tag build-<date>.<NNN>` (e.g. `build-2026.08.31.001`, matching the footer's "Build 2026.08.31.001" text exactly), then `git push origin build-<date>.<NNN>`.
 
 `/updates.html` is a real, reachable page — it's just not linked from anywhere on the site (not in NAV, not the footer, not any sitemap), and is marked `robots: noindex` in `src/pages.config.mjs` for exactly that reason. It's a build log for whoever knows the URL, not user-facing content.
+
+## Data kept in sync by hand
+- **Contact details are hardcoded, not centralized.** Unlike kington-parishes/kingtonfoodbank, there's no `site.config.mjs` here — phone and email are hardcoded independently in `templates/footer.html`, `src/pages/contact.html`, and the JSON-LD `ProfessionalService` block in `templates/page.html`. Nothing tests that they agree.
+- **The sibling-site list is hardcoded in three places.** Which sites MediaWright has built (currently wrightmaths.uk, kingtonfoodbank.org.uk, lovinggod.uk) is listed independently in `src/pages/index.html`, `src/pages/work.html`, and the JSON-LD `sameAs` array in `templates/page.html`. Adding, renaming, or retiring a project means updating all three by hand — including kington-parishes and Mr Wright's Rules once they're added to the portfolio properly, not just work.html.

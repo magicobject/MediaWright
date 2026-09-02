@@ -16,13 +16,19 @@ export const PAGES: SitePage[] = [
     path: '/index.html',
     navLabel: 'Home',
     titleContains: 'MediaWright',
-    heading: /worth building/i,
+    heading: /world-class web craft/i,
   },
   {
     path: '/work.html',
     navLabel: 'Work',
     titleContains: 'Our Work',
     heading: /what we.ve built/i,
+  },
+  {
+    path: '/craft.html',
+    navLabel: 'Craft',
+    titleContains: 'Our Craft',
+    heading: /how we actually work/i,
   },
   {
     path: '/services.html',
