@@ -10,6 +10,8 @@ export const SITE = {
   email: 'hello@mediawright.uk',
   phoneDisplay: '07449 301083',
   phoneTel: '+447449301083',
+  // Same number as phoneTel, digits only (no "+") — the format wa.me links need.
+  whatsappNumber: '447449301083',
 
   hqName: 'Ravenswood',
   street: 'Pinsley Rd',

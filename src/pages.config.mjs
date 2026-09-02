@@ -33,7 +33,7 @@ export const PAGES = [
   {
     slug: 'services',
     title: 'Services | MediaWright',
-    description: 'What MediaWright can build for you: sites for businesses and sole traders, charities and community groups, and writing/book projects.',
+    description: 'What MediaWright can build for you: sites for businesses, charities and community groups, and writing/book projects.',
     active: 'services.html',
   },
   {
