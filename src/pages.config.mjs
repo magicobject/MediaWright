@@ -5,6 +5,7 @@
 export const NAV = [
   { href: 'index.html', label: 'Home' },
   { href: 'work.html', label: 'Work' },
+  { href: 'https://claude.ai/code/artifact/69b4d4f2-e8c6-4240-b4b1-86a2aeccc42e', label: 'Proof of Work' },
   { href: 'craft.html', label: 'Craft' },
   { href: 'services.html', label: 'Services' },
   { href: 'prices.html', label: 'Prices' },

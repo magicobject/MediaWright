@@ -44,15 +44,21 @@ function replaceTokens(html, tokens) {
   return out;
 }
 
+// External nav entries (e.g. the Proof of Work brochure, hosted off-site)
+// open in a new tab — same auto-detection kington-parishes' footer nav uses.
+function externalAttrs(href) {
+  return /^https?:\/\//.test(href) ? ' target="_blank" rel="noopener"' : '';
+}
+
 function renderNavItems(activeHref) {
   return NAV.map(({ href, label }) => {
     const current = href === activeHref ? ' aria-current="page"' : '';
-    return `        <li><a href="${href}"${current}>${label}</a></li>`;
+    return `        <li><a href="${href}"${current}${externalAttrs(href)}>${label}</a></li>`;
   }).join('\n');
 }
 
 const footerNavItems = NAV.map(
-  ({ href, label }) => `        <li><a href="${href}">${label}</a></li>`
+  ({ href, label }) => `        <li><a href="${href}"${externalAttrs(href)}>${label}</a></li>`
 ).join('\n');
 
 const buildNumber = readBuildNumber();

@@ -50,6 +50,24 @@ export const PAGES: SitePage[] = [
   },
 ];
 
+// The full nav in DOM order, including external links (the Proof of Work
+// brochure) that aren't real local pages and so don't belong in PAGES above
+// — used only to verify the nav renders exactly the right links, in the
+// right order. Keep this in sync with src/pages.config.mjs's NAV export.
+export interface NavItem {
+  label: string;
+  href: string;
+}
+export const NAV_ITEMS: NavItem[] = [
+  { label: 'Home', href: 'index.html' },
+  { label: 'Work', href: 'work.html' },
+  { label: 'Proof of Work', href: 'https://claude.ai/code/artifact/69b4d4f2-e8c6-4240-b4b1-86a2aeccc42e' },
+  { label: 'Craft', href: 'craft.html' },
+  { label: 'Services', href: 'services.html' },
+  { label: 'Prices', href: 'prices.html' },
+  { label: 'Contact', href: 'contact.html' },
+];
+
 // Not in the primary nav — deliberately unlinked from anywhere on the site
 // (see CLAUDE.md's "Build numbers" section). Kept out of PAGES above so it
 // never gets pulled into the nav-behaviour specs, which assume every entry

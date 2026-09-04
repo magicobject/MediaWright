@@ -1,5 +1,5 @@
 import { test, expect, type Page } from '@playwright/test';
-import { PAGES } from './support/pages';
+import { PAGES, NAV_ITEMS } from './support/pages';
 
 async function activeNavLabel(page: Page): Promise<string> {
   const active = page.locator('nav.mainnav a[aria-current="page"]');
@@ -16,11 +16,11 @@ test('landing on the site shows the homepage with Home highlighted in the nav', 
   expect(await activeNavLabel(page)).toBe('Home');
 
   const links = page.locator('nav.mainnav a');
-  await expect(links).toHaveText(PAGES.map((p) => p.navLabel));
-  for (const sitePage of PAGES) {
+  await expect(links).toHaveText(NAV_ITEMS.map((p) => p.label));
+  for (const item of NAV_ITEMS) {
     await expect(
-      page.locator('nav.mainnav').getByRole('link', { name: sitePage.navLabel, exact: true }),
-    ).toHaveAttribute('href', sitePage.path.slice(1));
+      page.locator('nav.mainnav').getByRole('link', { name: item.label, exact: true }),
+    ).toHaveAttribute('href', item.href);
   }
 });
 
