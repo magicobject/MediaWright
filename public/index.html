@@ -14,12 +14,12 @@
 <meta name="description" content="MediaWright is a web development consultancy: legacy-consultancy calibre — accessible, secure, tested to 100% coverage — at a fraction of the cost, because AI does the typing and forty years of engineering discipline does the thinking.">
 <link rel="canonical" href="https://mediawright.uk/index.html">
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"ProfessionalService","name":"MediaWright","url":"https://mediawright.uk/","email":"hello@mediawright.uk","telephone":"+447449301083","address":{"@type":"PostalAddress","streetAddress":"Ravenswood, Pinsley Rd","addressLocality":"Leominster","postalCode":"HR6 8NN","addressCountry":"GB"},"description":"MediaWright is a web development consultancy building websites for businesses, charities, churches and community groups, and helping turn writing projects into proper websites.","areaServed":"GB","sameAs":["https://wrightmaths.uk/","https://kingtonfoodbank.org.uk/","https://lovinggod.uk/","https://kington-parishes.magicobject.workers.dev/","https://mrwrightsrules.magicobject.workers.dev/"]}</script>
-<link rel="icon" href="img/favicon.svg?v=2026.09.03.002" type="image/svg+xml">
+<link rel="icon" href="img/favicon.svg?v=2026.09.04.001" type="image/svg+xml">
 <meta name="theme-color" content="#1B1815">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/style.css?v=2026.09.03.002">
+<link rel="stylesheet" href="css/style.css?v=2026.09.04.001">
 </head>
 <body>
 <header class="site-header">
@@ -100,10 +100,13 @@
         <p>Every colour pairing in that gradient was checked by relative-luminance calculation, not eyeballed &mdash; the palette was chosen specifically so the weakest text colour cleared 4.5:1 with real margin, not a bare pass. When a plain colour swap would have dropped a footer's fine print below that threshold, the fix shipped in the same commit, not as a follow-up ticket.</p>
         <h3>A hand-drawn sketch became a working feature</h3>
         <p>The site had a lovely pen-and-ink drawing of all five churches, sitting there decoratively, doing nothing. It's now a working navigation element &mdash; five invisible, precisely-measured hotspots overlaid on a responsive image, each one jumping to the right church, each one with a real accessible name for a screen reader, each one verified by hovering every single segment and checking it lined up with the actual building before it shipped.</p>
-        <p><a href="https://kington-parishes.magicobject.workers.dev/our-churches.html" target="_blank" rel="noopener" style="color:#fff;text-decoration:underline;">See it live on the demo site &rarr;</a></p>
+        <p>
+          <a href="https://kington-parishes.magicobject.workers.dev/our-churches.html" target="_blank" rel="noopener" style="color:#fff;text-decoration:underline;">See it live on the demo site &rarr;</a><br>
+          <a href="https://claude.ai/code/artifact/69b4d4f2-e8c6-4240-b4b1-86a2aeccc42e" target="_blank" rel="noopener" style="color:#fff;text-decoration:underline;">Read the full capabilities brochure &rarr;</a>
+        </p>
       </div>
       <ul class="case-list">
-        <li><span class="fig mono">127</span><span class="desc">Playwright tests, <strong>every one green</strong> before anything ships</span></li>
+        <li><span class="fig mono">283</span><span class="desc">automated tests &mdash; 219 Playwright, 64 unit &mdash; <strong>every one green</strong> before anything ships</span></li>
         <li><span class="fig mono">0</span><span class="desc">accessibility violations, on every page, checked by axe-core &mdash; the same engine behind most enterprise a11y audits</span></li>
         <li><span class="fig mono">5.6:1</span><span class="desc">the contrast margin chosen for the new footer, not the 4.5:1 minimum &mdash; real headroom, computed, not guessed</span></li>
         <li><span class="fig mono">100%</span><span class="desc">of the change history, publicly git-tagged &mdash; <a href="https://github.com/magicobject/kington-parishes" target="_blank" rel="noopener" style="color:var(--gold);">read it yourself &rarr;</a></span></li>
@@ -218,9 +221,9 @@
   </div>
   <div class="legal wrap">
     <span>&copy; <span id="yr"></span> MediaWright.</span>
-    <span class="build-number">Build 2026.09.03.002</span>
+    <span class="build-number">Build 2026.09.04.001</span>
   </div>
-  <script src="js/main.js?v=2026.09.03.002" defer></script>
+  <script src="js/main.js?v=2026.09.04.001" defer></script>
 </footer>
 </body>
 </html>

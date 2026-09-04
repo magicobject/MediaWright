@@ -55,10 +55,13 @@
         <p>Every colour pairing in that gradient was checked by relative-luminance calculation, not eyeballed &mdash; the palette was chosen specifically so the weakest text colour cleared 4.5:1 with real margin, not a bare pass. When a plain colour swap would have dropped a footer's fine print below that threshold, the fix shipped in the same commit, not as a follow-up ticket.</p>
         <h3>A hand-drawn sketch became a working feature</h3>
         <p>The site had a lovely pen-and-ink drawing of all five churches, sitting there decoratively, doing nothing. It's now a working navigation element &mdash; five invisible, precisely-measured hotspots overlaid on a responsive image, each one jumping to the right church, each one with a real accessible name for a screen reader, each one verified by hovering every single segment and checking it lined up with the actual building before it shipped.</p>
-        <p><a href="https://kington-parishes.magicobject.workers.dev/our-churches.html" target="_blank" rel="noopener" style="color:#fff;text-decoration:underline;">See it live on the demo site &rarr;</a></p>
+        <p>
+          <a href="https://kington-parishes.magicobject.workers.dev/our-churches.html" target="_blank" rel="noopener" style="color:#fff;text-decoration:underline;">See it live on the demo site &rarr;</a><br>
+          <a href="https://claude.ai/code/artifact/69b4d4f2-e8c6-4240-b4b1-86a2aeccc42e" target="_blank" rel="noopener" style="color:#fff;text-decoration:underline;">Read the full capabilities brochure &rarr;</a>
+        </p>
       </div>
       <ul class="case-list">
-        <li><span class="fig mono">127</span><span class="desc">Playwright tests, <strong>every one green</strong> before anything ships</span></li>
+        <li><span class="fig mono">283</span><span class="desc">automated tests &mdash; 219 Playwright, 64 unit &mdash; <strong>every one green</strong> before anything ships</span></li>
         <li><span class="fig mono">0</span><span class="desc">accessibility violations, on every page, checked by axe-core &mdash; the same engine behind most enterprise a11y audits</span></li>
         <li><span class="fig mono">5.6:1</span><span class="desc">the contrast margin chosen for the new footer, not the 4.5:1 minimum &mdash; real headroom, computed, not guessed</span></li>
         <li><span class="fig mono">100%</span><span class="desc">of the change history, publicly git-tagged &mdash; <a href="https://github.com/magicobject/kington-parishes" target="_blank" rel="noopener" style="color:var(--gold);">read it yourself &rarr;</a></span></li>
